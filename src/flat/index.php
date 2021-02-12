@@ -10,7 +10,7 @@ function flatten($array)
 }
 
 var_dump(flatten($arr));
-/** 
+/*
 array(12) {
   [0]=>    
   int(1)   
@@ -37,4 +37,4 @@ array(12) {
   [11]=>
   string(6) "string"
 }
- **/
+ */
