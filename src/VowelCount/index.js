@@ -7,12 +7,7 @@ The input string will only consist of lower case letters and/or spaces.
 */
 
 function getCount(str) {
-    return str.split("").reduce((acc, item) => {
-        if (/[aeiou]/.test(item)) {
-            acc++;
-        }
-        return acc;
-    }, 0);
+    return str.split("").filter((item) => /[aeiou]/.test(item)).length;
 }
 
 console.log(getCount("abracadabra")); //5
