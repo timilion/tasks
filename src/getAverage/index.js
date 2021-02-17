@@ -5,6 +5,8 @@ function getAverage(marks) {
     return Math.floor(marks.reduce((acc, item) => acc + item, 0) / marks.length);
 }
 
+const getAverage2 = (marks) => ~~(eval(marks.join("+")) / marks.length);
+
 console.log(getAverage([2, 2, 2, 2])); //2
 console.log(getAverage([1, 2, 3, 4, 5])); //3
-console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])); //1
+console.log(getAverage2([1, 1, 1, 1, 1, 1, 1, 2])); //1
